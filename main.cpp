@@ -32,7 +32,7 @@ public:
                 nq.pop();
                 for(auto &x:graph[ele.first]){//O(v) time
                     //graph[ele.first] is the first cell in the adjacency list 1->2->3
-                    //1,2,3 are nodes connected to node-0
+                    //1,2,3 are nodes connected to node 0
                     int mask=ele.second|(1<<x);
                     cout<<"mask :"<<mask<<endl;
                     //bit-wise or with respective bitmasks
